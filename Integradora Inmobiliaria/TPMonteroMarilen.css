@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li+li {
+    padding-left: 20%;
+}
+
+li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li:hover:not([style]) {
+    text-decoration: underline rgba(255, 255, 255, 0.3);
+}
+
+li:hover:not([style]),
+button:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0px 0px 5px 5px inset hsla(0, 0%, 0%, 0.1);
+}
+
+/*font*/
+
+.rem1-3 {
+    font-size: 1.3rem;
+}
+
+.rem1-5 {
+    font-size: 1.5rem;
+}
+
+.rem2 {
+    font-size: 2rem;
+}
+
+.rem2-3 {
+    font-size: 2.3rem;
+}
+
+.rem2-5 {
+    font-size: 2.5rem;
+}
+
+.rem3 {
+    font-size: 3rem;
+}
+
+.font-lighter {
+    font-weight: lighter;
+}
+
+/*position*/
+
+.flexbox {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.just-start {
+    justify-content: flex-start;
+}
+
+.just-end {
+    justify-content: flex-end;
+}
+
+.just-around {
+    justify-content: space-around;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/*scpaces*/
+
+.p-right3 {
+    padding-right: 3%;
+}
+
+/* --> header <-- */
+
+header{
+    background-image: url("\header.jpg");
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    padding-left: 5%;
+}
+
+.logo-img {
+    height: 10vh;
+}
+
+.main-nav {
+    padding-top: 5%;
+}
+
+header h2 {
+    margin-top: 27%;
+}
+
+/* --> main <-- */
+
+main {
+    margin: 0 10vw;
+}
+
+.contenido {
+    text-align: center;
+}
+
+.contenido h3:first-child {
+    margin: 50px 0;
+}
+
+.cualidad:nth-child(2),
+.casa:nth-child(2) {
+    margin: 0 2%;
+}
+
+
+/* cualidades */
+
+.div-cualidades {
+    justify-content: center;
+}
+
+.cualidad p {
+    line-height: 30px;
+}
+
+/* casas */
+
+.casas {
+    align-items: flex-start;
+    font-size: 1.2rem;
+}
+
+.casa {
+    width: 500px;
+    border: 1px solid #cdcdcd;
+    background-color: #f5f5f5;
+}
+
+.casa img[src*="anuncio"] {
+    width: 100%;
+}
+
+.tarjeta {
+    text-align: left;
+    padding: 10% 5% 5%;
+}
+
+.tarjeta p {
+    line-height: 2.5rem;
+    margin-bottom: 0;
+}
+
+.tarjeta button {
+    border: none;
+    font-weight: bold;
+    background-color: #df8817;
+    color: #fff;
+    width: 100%;
+    padding: 3% 0;
+}
+
+.precio {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #71b11f;
+}
+
+.iconos {
+    font-weight: bold;
+    margin: 8%;
+}
+
+.iconos p {
+    margin: 0;
+}
+
+.iconos img {
+    height: 35px;
+}
+
+.iconos img[alt="baños"] {
+    height: 45px;
+}
+
+.propiedades {
+    border: none;
+    font-weight: bold;
+    background-color: #71b11f;
+    color: #fff;
+    padding: 1% 2%;
+    margin: 4% 0;
+}
+
+/* --> footer <-- */
+
+footer {
+    background-image: url(encuentra.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 5% 10vw;
+}
+
+footer button {
+    border: none;
+    font-weight: bold;
+    background-color: #df8817;
+    color: #fff;
+    padding: 1% 2%;
+    margin-top: 4%;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 2%;
+}
+
+.footer ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.footer li {
+    float: left;
+}
+
+.footer li+li {
+    padding-left: 3%;
+}
+
+/* --> media <-- */
+
+@media (max-width: 900px) {
+    .casas {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .casa:nth-child(2),
+    .casa {
+        margin: 5% auto;
+    }
+    .propiedades,
+    footer button {
+        padding: 3% 6%;
+    }
+}
